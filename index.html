@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* .rw-messages-container {background: #27aa29;
+   background: -webkit-linear-gradient(to right, #7a7a79, #5e685a, #6ada6c);
+    background: linear-gradient(to right, #81827e, #8ec181, #78dc7a);} */
+        .rw-conversation-container .rw-header {
+            background: #27aa29;
+            background: -webkit-linear-gradient(to right, #7a7a79, #5e685a, #6ada6c);
+            background: linear-gradient(to right, #abada4, #63a353, #b9d719);
+        }
+
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+            background-color: #b9d719;
+        }
+
+        .rw-launcher {
+            background-color: #ffffff;
+        }
+
+        .rw-conversation-container .rw-reply {
+            background-color: #b9d719;
+            border: 1px solid #b9d719;
+        }
+
+        .rw-conversation-container .rw-sender .rw-send .rw-send-icon-ready {
+            fill: #b9d719;
+        }
+
+    </style>
+    <div>
+        <center>
+            <!-- <h1 style="color: #b9d719;">ITVEDANT</h1> -->
+            <img src="assets/logo.png" alt="Background Image" style="width: 40%; height: 40%;">
+        </center>
+    </div>
+    <script>!(function () {
+            let e = document.createElement("script")
+                t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+                "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+                // Replace 1.x.x with the version that you want
+                (e.async = !0),
+                (e.onload = () => {
+                    window.WebChat.default(
+                        {
+                            initPayload: '/greet',
+                            customData: { language: "en" },
+                            socketUrl: "http://localhost:5005",
+                            title: 'Itvedant ChatBot',
+                            subtitle: "30000+ Students",
+                            profileAvatar: "assets/favicon.png",
+                            openLauncherImage: "assets/favicon.png",
+                            closeImage: "assets/favicon.png",
+                            showMessageDate: true,
+                            inputTextFieldHint: "What's in your mind?...",
+                            embedded: false,
+                            hideWhenNotConnected: true,
+                            customMessageDelay: (message) => {
+                                let delay = message.length * 40;
+                                if (delay > 3 * 1000) delay = 3 * 1000;
+                                if (delay < 800) delay = 800;
+                                return delay;
+                            }
+                            // add other props here
+                        },
+                        null
+                    );
+                }),
+                t.insertBefore(e, t.firstChild);
+        })();
+        localStorage.clear()
+    </script>
+</body>
+
+</html>

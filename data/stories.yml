@@ -1,0 +1,128 @@
+version: "3.1"
+
+stories:
+
+- story: itvedant path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: itvedant
+  - action: utter_itvedant
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: branches path
+  steps:
+  - intent: branches
+  - action: utter_branches
+  - intent: courses
+  - action: utter_courses
+
+- story: feedback path
+  steps:
+  - intent: feedback
+  - action: utter_feedback
+
+- story: positive path
+  steps:
+  - intent: positive
+  - action: utter_positive
+
+- story: negative path
+  steps:
+  - intent: negative
+  - action: utter_negative
+
+- story: user path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: domain
+  - action: utter_domain
+
+- story: data science path
+  steps:
+  - intent: data_science
+  - action: utter_data
+
+- story: data science time path
+  steps:
+  - intent: dsl6
+  - action: utter_dsl6
+  - intent: ds6
+  - action: utter_ds6
+  - intent: ds612
+  - action: utter_ds612
+  - intent: ds12
+  - action: utter_ds12
+  - intent: dsm12
+  - action: utter_dsm12
+
+- story: web development path
+  steps:
+  - intent: web_dev
+  - action: utter_web
+
+- story: web development time path
+  steps:
+  - intent: wdl6
+  - action: utter_wdl6
+  - intent: wd6
+  - action: utter_wd6
+  - intent: wd612
+  - action: utter_wd612
+  - intent: wd12
+  - action: utter_wd12
+  - intent: wdm12
+  - action: utter_wdm12
+
+- story: business analytics path
+  steps:
+  - intent: bus_any
+  - action: utter_ba
+
+- story: business analytics time path
+  steps:
+  - intent: bal6
+  - action: utter_bal6
+  - intent: ba6
+  - action: utter_ba6
+  - intent: ba612
+  - action: utter_ba612
+  - intent: ba12
+  - action: utter_ba12
+  - intent: bam12
+  - action: utter_bam12
+
+- story: cloud technology path
+  steps:
+  - intent: cloud
+  - action: utter_cloud
+
+- story: cloud time path
+  steps:
+  - intent: cll6
+  - action: utter_cll6
+  - intent: cl6
+  - action: utter_cl6
+  - intent: cl612
+  - action: utter_cl612
+  - intent: cl12
+  - action: utter_cl12
+  - intent: clm12
+  - action: utter_clm12
+
+- story: current time path
+  steps:
+  - intent: current_time
+  - action: action_current_time
+
+- story: user input path
+  steps:
+  - intent: user_input
+  - action: action_user_input
+
+- story: modules path
+  steps:
+  - intent: modules
+  - action: action_modules

@@ -1,0 +1,280 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - itvedant
+  - branches
+  - courses
+  - feedback
+  - positive
+  - negative
+  - consultancy
+  - my_name
+  - mobile_number
+  - domain
+  - data_science
+  - dsl6
+  - ds6
+  - ds612
+  - ds12
+  - dsm12
+  - web_dev
+  - wdl6
+  - wd6
+  - wd612
+  - wd12
+  - wdm12
+  - bus_any
+  - bal6
+  - ba6
+  - ba612
+  - ba12
+  - bam12
+  - cloud
+  - cll6
+  - cl6
+  - cl612
+  - cl12
+  - clm12
+  - current_time
+  - user_input
+  - modules
+  - out_of_scope
+
+entities:
+  - course_type
+  - course_name
+  - course_duration
+  - module_name
+  - name
+  - number
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+  number:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: number
+
+actions:
+  - action_current_time
+  - action_user_input
+  - action_modules
+  - action_submit
+
+forms:
+  user_details_form:
+    required_slots:
+      - name
+      - number
+
+responses:
+  utter_greet:
+  - text: "Hey ! How can we help you out ? "
+    buttons:
+      - title: "Require Consultation"
+        payload: "/consultancy"
+      - title: "Already have decided the field of Interest"
+        payload: "/domain"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_itvedant:
+  - text: "Itvedant is an IT training institute."
+
+  utter_branches:
+  - text: "Itvedant have total of seven branches in India. Thane | Andheri | Navi Mumbai | Chennai | Hyderabad | Pune | Bengaluru "
+
+  utter_courses:
+  - text: "Please Visit the Itvedant Website :- https://www.itvedant.com/"
+
+  utter_feedback:
+  - text: "Was our conversation useful to you ?"
+    buttons:
+      - title: "Yes"
+        payload: "/positive"
+      - title: "No"
+        payload: "/negative"
+
+  utter_positive:
+  - text: "we are glad that it was useful for you"
+
+  utter_negative:
+  - text: "Sorry for the inconvience"
+
+  utter_consultancy:
+  - text: "Please enter your details. Itvedant will contact you shortly"
+
+  utter_ask_name:
+  - text: What is your name?
+
+  utter_ask_number:
+  - text: What is your mobile number?
+
+  utter_details_thanks:
+    - text: "Thanks {Name} for providing the details. Itvedant team will contact you shortly on the given Mobile Number: {Mobile_number}"
+
+  utter_domain:
+  - text: "Please select your field of interest"
+    buttons:
+      - title: "Data Science"
+        payload: "/data_science"
+      - title: "Web Development"
+        payload: "/web_dev"
+      - title: "Business Analytics"
+        payload: "/bus_any"
+      - title: "Cloud Technology"
+        payload: "/cloud"
+
+  utter_data:
+  - text: "Any Specific time limitation"
+    buttons:
+      - title: "Less than 6 Months"
+        payload: "/dsl6"
+      - title: "6 Months"
+        payload: "/ds6"
+      - title: "6 - 12 Months"
+        payload: "/ds612"
+      - title: "12 Months"
+        payload: "/ds12"
+      - title: "More than 12 Months"
+        payload: "/dsm12"
+
+  utter_dsl6:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Online Batch is Recommender PG Course (https://www.itvedant.com/data-science-course)"
+
+  utter_ds6:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch is Recommended PG Course (https://www.itvedant.com/data-science-course)"
+
+  utter_ds612:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch Recommended for PG Course and Online Batch Recommended for Master Course (https://www.itvedant.com/data-science-and-ai)"
+
+  utter_ds12:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/data-science-and-ai)"
+
+  utter_dsm12:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/data-science-and-ai)"
+
+  utter_web:
+  - text: "Any Specific time limitation"
+    buttons:
+      - title: "Less than 6 Months"
+        payload: "/wdl6"
+      - title: "6 Months"
+        payload: "/wd6"
+      - title: "6 - 12 Months"
+        payload: "/wd612"
+      - title: "12 Months"
+        payload: "/wd12"
+      - title: "More than 12 Months"
+        payload: "/wdm12"
+
+  utter_wdl6:
+  - image: "https://sdacademy.pl/sda-assets/uploads/2021/10/WEB-DEVELOPMENT-s-1.png"
+    text: "Best Match :- Online Batch is Recommender PG Course (https://www.itvedant.com/training/mean-stack-development)"
+
+  utter_wd6:
+  - image: "https://sdacademy.pl/sda-assets/uploads/2021/10/WEB-DEVELOPMENT-s-1.png"
+    text: "Best Match :- Offline Batch is Recommended PG Course (https://www.itvedant.com/training/mean-stack-development)"
+  
+  utter_wd612:
+  - image: "https://sdacademy.pl/sda-assets/uploads/2021/10/WEB-DEVELOPMENT-s-1.png"
+    text: "Best Match :- Offline Batch Recommended for PG Course and Online Batch Recommended for Master Course (https://www.itvedant.com/full-stack-developer)"
+
+  utter_wd12:
+  - image: "https://sdacademy.pl/sda-assets/uploads/2021/10/WEB-DEVELOPMENT-s-1.png"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/full-stack-developer)"
+
+  utter_wdm12:
+  - image: "https://sdacademy.pl/sda-assets/uploads/2021/10/WEB-DEVELOPMENT-s-1.png"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/full-stack-developer)"
+
+  utter_ba:
+  - text: "Any Specific time limitation"
+    buttons:
+      - title: "Less than 6 Months"
+        payload: "/bal6"
+      - title: "6 Months"
+        payload: "/ba6"
+      - title: "6 - 12 Months"
+        payload: "/ba612"
+      - title: "12 Months"
+        payload: "/ba12"
+      - title: "More than 12 Months"
+        payload: "/bam12"
+
+  utter_bal6:
+  - image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_Tools_Used_By_Companies_Today.jpg"
+    text: "Best Match :- Online Batch is Recommender PG Course (https://www.itvedant.com/business-data-analytics)"
+
+  utter_ba6:
+  - image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_Tools_Used_By_Companies_Today.jpg"
+    text: "Best Match :- Offline Batch is Recommended PG Course (https://www.itvedant.com/business-data-analytics)"
+
+  utter_ba612:
+  - image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_Tools_Used_By_Companies_Today.jpg"
+    text: "Best Match :- Offline Batch Recommended for PG Course and Online Batch Recommended for Master Course (https://www.itvedant.com/master-business-data-analytics)"
+
+  utter_ba12:
+  - image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_Tools_Used_By_Companies_Today.jpg"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/master-business-data-analytics)"
+
+  utter_bam12:
+  - image: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Business_Analytics_Tools_Used_By_Companies_Today.jpg"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/master-business-data-analytics)"
+
+  utter_cloud:
+  - text: "Any Specific time limitation"
+    buttons:
+      - title: "Less than 6 Months"
+        payload: "/cll6"
+      - title: "6 Months"
+        payload: "/cl6"
+      - title: "6 - 12 Months"
+        payload: "/cl612"
+      - title: "12 Months"
+        payload: "/cl12"
+      - title: "More than 12 Months"
+        payload: "/clm12"
+
+  utter_cll6:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Online Batch is Recommender Master Course (https://www.itvedant.com/aws-azure-cloud-technology)"
+
+  utter_cl6:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Online Batch is Recommended Master Course (https://www.itvedant.com/aws-azure-cloud-technology)"
+
+  utter_cl612:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Online Batch Recommended for Master Course (https://www.itvedant.com/aws-azure-cloud-technology)"
+
+  utter_cl12:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/aws-azure-cloud-technology)"
+
+  utter_clm12:
+  - image: "https://imageio.forbes.com/specials-images/imageserve/5f9fa9e815da35da1356a28b/The-5-Biggest-Cloud-Computing-Trends-In-2021/960x0.jpg?format=jpg&width=960"
+    text: "Best Match :- Offline Batch Recommended for Master Course (https://www.itvedant.com/aws-azure-cloud-technology)"
+
+  utter_out_of_scope:
+  - text: "Sorry ! I didn't Understand that ... Please rephase your statement."
+
+  utter_no_data:
+  - text: "Sorry at present i am unable to answer. Or try to rephase the question."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

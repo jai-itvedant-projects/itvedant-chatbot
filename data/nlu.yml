@@ -1,0 +1,353 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: itvedant
+  examples: |
+    - what is itvedant
+    - tell me about itvedant
+    - itvedant
+    - can you let me know about the itvedant
+    - is itvedant an IT training institute
+
+- intent: branches
+  examples: |
+    - do itvedant have branches in India
+    - how many branches are there in India
+    - do itvedant have in foreign countries
+    - where itvedant have branches
+    - where are the braches of itvedant
+    - branches in India
+
+- intent: courses
+  examples: |
+    - can i get to know about the courses
+    - courses at itvedant
+    - modules taught at itvedant
+
+- intent: feedback
+  examples: |
+    - ok
+    - TY
+    - TYSM
+    - Thank You
+
+- intent: positive
+  examples: |
+    - Yes
+    - yes
+    - YES
+
+- intent: negative
+  examples: |
+    - No
+    - no
+    - NO
+
+- intent: consultancy
+  examples: |
+    - consultancy
+    - i need consultancy
+    - can i get consultancy
+
+- intent: my_name
+  examples: |
+    - my name is [ashish](name)
+    - my name is [rahul](name)
+    - my name is [apneet](name)
+    - [ashish](name) is my name
+    - [ashish](name) this side
+    - people call me [ashish](name)
+    - [jai](name)
+
+- intent: mobile_number
+  examples: |
+    - my number is [8209829808](number)
+    - [8209829808](number)
+    - [8209829808](number) is my number
+    - my nobile number is [8209829808](number)
+    - [7021181116](number)
+
+- intent: domain
+  examples: |
+    - i have already selected the domain
+    - i have already selected the field
+    - i have decided about the field
+
+- intent: data_science
+  examples: |
+    - do itvedant provide data science
+    - what is data science
+    - is data science course provided by itvedant
+
+- intent: dsl6
+  examples: |
+    - data science course within 6 months
+    - i have less than 6 months to complete the data science course
+    - is data science course available for less than 6 months
+  
+- intent: ds6
+  examples: |
+    - data science course in 6 months
+    - i have 6 months to complete the data science course
+    - is data science course available for 6 months
+
+- intent: ds612
+  examples: |
+    - data science course within 6-12 months
+    - i have 6-12 months to complete the data science course
+    - is data science course available for 6-12 months
+
+- intent: ds12
+  examples: |
+    - data science course in 12 months
+    - i have 12 months to complete the data science course
+    - is data science course available for 12 months
+
+- intent: dsm12
+  examples: |
+    - data science course for more than 12 months
+    - i have more than 12 months to complete the data science course
+    - is data science course available for more than 12 months
+
+- intent: web_dev
+  examples: |
+    - do itvedant provide Web Development
+    - what is web development
+    - is web development course provided by itvedant
+
+- intent: wdl6
+  examples: |
+    - web development course within 6 months
+    - i have less than 6 months to complete the web development course
+    - is web development course available for less than 6 months
+  
+- intent: wd6
+  examples: |
+    - web development course in 6 months
+    - i have 6 months to complete the web development course
+    - is web development course available for 6 months
+
+- intent: wd612
+  examples: |
+    - web development course within 6-12 months
+    - i have 6-12 months to complete the web development course
+    - is web development course available for 6-12 months
+
+- intent: wd12
+  examples: |
+    - web development course in 12 months
+    - i have 12 months to complete the web development course
+    - is web development course available for 12 months
+
+- intent: wdm12
+  examples: |
+    - web development course for more than 12 months
+    - i have more than 12 months to complete the web development course
+    - is web development course available for more than 12 months
+
+- intent: bus_any
+  examples: |
+    - do itvedant provide business analytics
+    - what is business analytics
+    - is business analytics course provided by itvedant
+
+- intent: bal6
+  examples: |
+    - business analytics course within 6 months
+    - i have less than 6 months to complete the business analytics course
+    - is business analytics course available for less than 6 months
+  
+- intent: ba6
+  examples: |
+    - business analytics course in 6 months
+    - i have 6 months to complete the business analytics course
+    - is business analytics course available for 6 months
+
+- intent: ba612
+  examples: |
+    - business analytics course within 6-12 months
+    - i have 6-12 months to complete the business analytics course
+    - is business analytics course available for 6-12 months
+
+- intent: ba12
+  examples: |
+    - business analytics course in 12 months
+    - i have 12 months to complete the business analytics course
+    - is business analytics course available for 12 months
+
+- intent: bam12
+  examples: |
+    - business analytics course for more than 12 months
+    - i have more than 12 months to complete the business analytics course
+    - is business analytics course available for more than 12 months
+
+- intent: cloud
+  examples: |
+    - do itvedant provide cloud technology
+    - what is cloud technology
+    - is cloud technology course provided by itvedant
+
+- intent: cll6
+  examples: |
+    - cloud course within 6 months
+    - i have less than 6 months to complete the cloud course
+    - is cloud course available for less than 6 months
+  
+- intent: cl6
+  examples: |
+    - cloud course in 6 months
+    - i have 6 months to complete the cloud course
+    - is cloud course available for 6 months
+
+- intent: cl612
+  examples: |
+    - cloud course within 6-12 months
+    - i have 6-12 months to complete the cloud course
+    - is cloud course available for 6-12 months
+
+- intent: cl12
+  examples: |
+    - cloud course in 12 months
+    - i have 12 months to complete the cloud course
+    - is cloud course available for 12 months
+
+- intent: clm12
+  examples: |
+    - cloud course for more than 12 months
+    - i have more than 12 months to complete the cloud course
+    - is cloud course available for more than 12 months
+
+- intent: current_time
+  examples: |
+    - what is current time
+    - current time
+    - tell me the current time
+    - what time is it
+
+- intent: user_input
+  examples: |
+    - [masters](course_type) in [data science](course_name) for [12 months](course_duration)
+    - [master](course_type) in [web development](course_name) for [12 months](course_duration)
+    - [masters](course_type) in [business analytics](course_name) for [12 months](course_duration)
+    - [master](course_type) in [cloud technology](course_name) for [12 months](course_duration)
+
+    - [masters](course_type) in [data science](course_name) for [6 months](course_duration)
+    - [master](course_type) in [web development](course_name) for [6 months](course_duration)
+    - [masters](course_type) in [business analytics](course_name) for [6 months](course_duration)
+    - [master](course_type) in [cloud technology](course_name) for [6 months](course_duration)
+
+    - [pg](course_type) in [data science](course_name) for [12 months](course_duration)
+    - [pg](course_type) in [web development](course_name) for [12 months](course_duration)
+    - [pg](course_type) in [business analytics](course_name) for [12 months](course_duration)
+    - [pg](course_type) in [cloud technology](course_name) for [12 months](course_duration)
+
+    - [pg](course_type) in [data science](course_name) for [6 months](course_duration)
+    - [pg](course_type) in [web development](course_name) for [6 months](course_duration)
+    - [pg](course_type) in [business analytics](course_name) for [6 months](course_duration)
+    - [pg](course_type) in [cloud technology](course_name) for [6 months](course_duration)
+
+- intent: modules
+  examples: |
+    - [ai](module_name)
+    - [data science](module_name)
+    - [machine learning](module_name)
+    - [deep learning](module_name)
+    - [computer vision](module_name)
+    - [natural language processing](module_name)
+    - [big data](module_name)
+    - [tensorflow](module_name)
+    - [hadoop](module_name)
+    - [time series](module_name)
+    - [recommended system](module_name)
+    - [web development](module_name)
+    - [python](module_name)
+    - [java](module_name)
+    - [bi](module_name)
+    - [analysis](module_name)
+    - [analytics](module_name)
+    - [tableau](module_name)
+    - [power bi](module_name)
+    - [powerBI](module_name)
+    - [AWS](module_name)
+    - [PYTHON](module_name)
+    - [website](module_name)
+    - [REACT](module_name)
+    - [JAVA](module_name)
+    - [front end](module_name)
+    - [back end](module_name)
+    - [GCP](module_name)
+    - [business analysis](module_name)
+    - [python development](module_name)
+    - is [machine learning](module_name) course available
+    - is [deep learning](module_name) course available
+    - is [nlp](module_name) course available
+    - is [computer vision](module_name) course available
+    - how can i learn [ai](module_name)
+    - itvedant provide [artificial intelligence](module_name) course
+    - can i learn [machine learning](module_name)
+    - can i learn [deep learning](module_name)
+    - can i learn [big data](module_name)
+    - can i learn [natural language processing](module_name)
+    - can i learn [computer vision](module_name)
+    - can i learn [bi](module_name) tools
+    - [python](module_name) development
+    - [java](module_name) development
+    - [ai](module_name) development
+    - [business](module_name) development
+    - [react](module_name) development
+    - [node](module_name) development
+    - [full stack](module_name) development
+    - [ai](module_name) models development
+    - do itvedant provide [bi](module_name) courses
+    - [bi](module_name) course are available at itvedant
+    - [analytics](module_name) are taught in itvedant
+    - [analysis](module_name) are taught in itvedant
+    - how can i learn [business analysis](module_name)
+    - do itvedant teach [power bi](module_name)
+    - do itvedant teach [web development](module_name)
+    - [website development](module_name)
+    - full [stack development](module_name) is taught by itvedant
+    - itvedant offer [cloud computing](module_name) course
+    - is there any course related to [cloud technology](module_name)
+    - can i learn [cloud](module_name)
+    - tell me about the [aws](module_name) course
+    - can i learn [front end](module_name) development
+    - can i learn [back end](module_name) development
+    - can i learn [ai](module_name) development
+
+- intent: out_of_scope
+  examples: |
+    - What is cricket
+    - tell me about the helmet
+    - is there any tree near me
+    - who is the prime minister
+    - president meaning
